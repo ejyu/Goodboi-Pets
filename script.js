@@ -1,9 +1,9 @@
 // The image that will be changed.
 const image = document.getElementById('needsPets');
 // File path to the "not petting" image.
-const originalSrc = 'img/placeholder-nopet.png';
+const originalSrc = 'img/Nelca-nopet.png';
 // File path to "petting" image.
-const updatedSrc = 'img/placeholder-pet.png';
+const updatedSrc = 'img/Nelca-pet.png';
 
 // By default, assume no clicking is happening.
 let isMouseDown = false;
