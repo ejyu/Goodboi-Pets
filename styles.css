@@ -1,0 +1,13 @@
+img {
+
+    /* Changes the cursor to signify that this is a clickable image. */
+    cursor: pointer;
+
+    /* Attempt to vertically and horizontally center the image. */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 400px;
+    
+}
