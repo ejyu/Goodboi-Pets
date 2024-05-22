@@ -12,6 +12,13 @@ img {
     
 }
 
+.hidden {
+
+    /* Lazy attempt at helping with load times. */
+    visibility: hidden;
+
+}
+
 body {
 
     /* Set the webpage's background color. */
