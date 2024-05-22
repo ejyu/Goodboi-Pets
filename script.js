@@ -16,6 +16,7 @@ image.addEventListener('mousedown', () => {
 
     // Indicate that the mouse is being held.
     isMouseDown = true;
+
     // Change to "petting" image.
     image.src = updatedSrc;
 
@@ -28,6 +29,7 @@ image.addEventListener('mouseup', () => {
 
     // Indicate that the mouse has been released.
     isMouseDown = false;
+    
     // Change to "not petting" image.
     image.src = originalSrc;
 
