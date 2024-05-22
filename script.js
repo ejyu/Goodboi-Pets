@@ -9,6 +9,10 @@ const updatedSrc = 'img/Nelca-pet.png';
 let isMouseDown = false;
 // This is intended to be used for edge cases.
 
+// By default, assume no tapping is happening.
+let isTouched = false;
+// This is intended to be used for edge cases.
+
 /**
  * Change the image source when mouse is pressed.
  */
@@ -42,6 +46,47 @@ image.addEventListener('mouseleave', () => {
 
     // If mouse is held but the cursor moves off the image...
     if (isMouseDown) {
+
+        // ...then change to "not petting" image.
+        image.src = originalSrc;
+
+    }
+
+});
+
+/**
+ * Change the image source when touched.
+ */
+image.addEventListener('touchstart', () => {
+
+    // Indicate that the image is being touched.
+    isTouched = true;
+
+    // Change to "petting" image.
+    image.src = updatedSrc;
+
+});
+
+/**
+ * Revert back to the original image when touching ends.
+ */
+image.addEventListener('touchend', () => {
+
+    // Indicate that the image is no longer being touched.
+    isTouched = false;
+    
+    // Change to "not petting" image.
+    image.src = originalSrc;
+
+});
+
+/**
+ * Handle case where finger leaves the image while still on touchscreen.
+ */
+image.addEventListener('touchcancel', () => {
+
+    // If touching but user's finger moves off the image...
+    if (isTouched) {
 
         // ...then change to "not petting" image.
         image.src = originalSrc;
