@@ -14,7 +14,9 @@ img {
 
 .hidden {
 
-    /* Lazy attempt at helping with load times. */
+    /* Lazy attempt at improving load times. */
+    width: 1%;
+    max-width: 2px;
     visibility: hidden;
 
 }
