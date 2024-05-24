@@ -103,7 +103,28 @@ image.addEventListener('touchcancel', () => {
 
 });
 
-// Prevent context menu from being opened on the image.
+/**
+ * Prevent context menu from being opened on the image.
+ */
 image.addEventListener('contextmenu', (event) => {
     event.preventDefault();
 });
+
+// Pets count starts at 0.
+let petsCount = 0;
+
+/**
+ * Pets counter function.
+ */
+function incrementPetsCount() {
+
+    // Increment the pets counter.
+    petsCount++;
+
+    // Update the counter that people actually see.
+    document.getElementById('clickCount').textContent = petsCount;
+
+}
+
+// Increment the pets count every time the image is clicked on.
+image.addEventListener('click', incrementPetsCount);

@@ -32,3 +32,21 @@ body {
     align-items: center;        /* Helps scale image height properly. */
     
 }
+
+.petsCounterDisplay {
+
+    /* Nicer font. */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Color the text white. */
+    color: white;
+
+    /* Allows the text to be positioned over the image. */
+    position: absolute;
+
+    /* Anchor to bottom of the webpage. */
+    bottom: 2%;
+
+    /* Center text. */
+    text-align: center;
+}
