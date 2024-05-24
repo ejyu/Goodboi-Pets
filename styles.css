@@ -10,6 +10,10 @@ img {
     /* Prevent context menu from opening on iOS devices. */
     -webkit-touch-callout: none !important;
     -webkit-user-select: none !important;
+
+    /* Additional select prevention handling. */
+    -ms-user-select: none;      /* For IE 10 and IE 11. */
+    user-select: none;          /* Standard syntax. */
     
 }
 
