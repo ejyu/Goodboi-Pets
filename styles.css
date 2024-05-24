@@ -9,15 +9,6 @@ img {
     
 }
 
-.hidden {
-
-    /* Lazy attempt at improving load times. */
-    width: 1%;
-    max-width: 2px;
-    visibility: hidden;
-
-}
-
 body {
 
     /* Set the webpage's background color. */
