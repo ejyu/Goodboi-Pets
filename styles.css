@@ -11,6 +11,9 @@ img {
 
 body {
 
+    /* Prevent scrolling. */
+    overflow: hidden;
+
     /* Set the webpage's background color. */
     background-color: orange;
 
