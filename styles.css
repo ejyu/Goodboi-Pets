@@ -6,6 +6,10 @@ img {
     /* Restrain image size to webpage dimensions. */
     max-width: 100%; 
     max-height: 100%;
+
+    /* Prevent context menu from opening on iOS devices. */
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
     
 }
 
