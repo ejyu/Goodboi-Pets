@@ -13,6 +13,14 @@ let isMouseDown = false;
 let isTouched = false;
 // This is intended to be used for edge cases.
 
+// Preload the "not petting" image.
+const preloadNoPet = new Image();
+preloadNoPet.src = originalSrc;
+
+// Preload the "petting" image.
+const preloadPet = new Image();
+preloadPet.src = updatedSrc;
+
 /**
  * Change the image source when mouse is pressed.
  */
