@@ -102,3 +102,8 @@ image.addEventListener('touchcancel', () => {
     }
 
 });
+
+// Prevent context menu from being opened on the image.
+image.addEventListener('contextmenu', (event) => {
+    event.preventDefault();
+});
